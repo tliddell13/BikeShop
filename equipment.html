@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Phoenix Bicycles</title>
+    <link rel="stylesheet" href="css/Bikes.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap">
+    <script src="https://kit.fontawesome.com/01a6745e6d.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<nav>
+<div class="navbar" id="topnav">
+  <div class="name">
+        <img src="images/PhoenixLogo.png">
+        <a href="index.php">Phoenix</a>
+  </div>
+  <div class="center" id="center">
+  <div class="bikesDropdown">
+  <button class="dropbtn" onclick="bikesDropdown()">Bikes</button>
+        <div class="bikesDropdown-content" id="bikesDropdown">
+            <a href="mountainBikes.html">Mountain</a>
+            <a href="roadBikes.html">Road</a>
+            <a href="hybridBikes.html">Hybrid</a>
+            <a href="equipment.html">Equipment</a>
+        </div> 
+    </div>
+  <a href="php/BikeShopAbout.php">About</a>
+  <a href="php/Repair.php">Repairs</a>
+  </div>
+  <div class="accountDropdown" id="account">
+    <a href="php/ContactUs.php">Contact us</a>
+  </div> 
+    <a href="javascript:void(0);" class="icon" onclick="mobile()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+</nav>
+<main>
+    <h2>High quality equipment for cyclists</h2>
+    <p>This page will show off some equipment</p>
+    <div class="row">
+        <div class="BikeColumns">
+            <h3>Bike1</h3>
+            <p>Image unavailable</p>
+            <a href="php/ContactUs.php">learn more <i class="fas fa-arrow-circle-right"></i></a>
+        </div>
+        <div class="BikeColumns">
+            <h3>Bike2</h3>
+            <p>Image unavailable/p>
+            <a href="php/ContactUs.php">learn more <i class="fas fa-arrow-circle-right"></i></a>
+        </div>
+        <div class="BikeColumns">
+            <h3>Bike3</h3>
+            <p>Image unavailable</p>
+            <a href="php/ContactUs.php">learn more <i class="fas fa-arrow-circle-right"></i></a>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="social">
+            <p>Follow us on Social Media!</p>
+            <a href ="https://www.facebook.com/" class="fa fa-facebook"></a>
+            <a href ="https://www.instagram.com/" class="fa fa-instagram"></a>
+            <a href ="https://www.twitter.com/" class="fa fa-twitter"></a>
+        </div>
+        <p><em>Copyright &copy; 2021 Phoenix Bicycle Corporation</em></p>
+        <p>DISCLAIMER:
+Phoenix Bicycles is a fictitious brand created solely for the purpose of the
+assessment of IN1010 module at City, University of London, UK. All products and
+people associated with Phoenix Bicycles are also fictitious. Any resemblance to real
+brands, products, or people is purely coincidental. Information provided about the
+product is also fictitious and should not be construed to be representative of actual
+products on the market in a similar product category.</p>
+</footer>
+</body>
+</html>

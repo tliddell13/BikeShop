@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Phoenix Bicycles</title>
+    <link rel="stylesheet" href="css/BikeShopLogin-Signup.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap">
+    <script src="https://kit.fontawesome.com/01a6745e6d.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <nav>
+        <div class="navbar" id="topnav">
+            <div class="name">
+                <img src="images/PhoenixLogo.png">
+                <a href="index.php">Phoenix</a>
+            </div>
+            <div class="center" id=center>
+            <div class="bikesDropdown">
+    <button class="dropbtn" onclick="bikesDropdown()">Bikes</button>
+        <div class="bikesDropdown-content" id="bikesDropdown">
+            <a href="mountainBikes.html">Mountain</a>
+            <a href="roadBikes.html">Road</a>
+            <a href="hybridBikes.html">Hybrid</a>
+            <a href="equipment.html">Equipment</a>
+        </div> 
+    </div>
+  <a href="php/BikeShopAbout.php">About</a>
+  <a href="php/BikeShopGallery.php">Gallery</a>
+  <a href="php/Repair.php">Repairs</a>
+  </div>
+  <div class="accountDropdown" id="account">
+    <a href="ContactUs.html">Contact us</a>
+  </div> 
+    <a href="javascript:void(0);" class="icon" onclick="mobile()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+</nav>
+    <!--This page only contains a login form and the navBar
+        For the login form I used the form from class.
+        The sign in uses javascript for client side verification and PHP for 
+        server side verification.
+        *Title: HTML Forms and Tables
+        *Author: Dr. Alena Denisova
+        *Date: 2021
+        *Availability: https://moodle.city.ac.uk/pluginfile.php/2221793/mod_resource/content/1/Session%2004%20-%20HTML%20Tables%20and%20Forms.pdf
+            -->
+        <main>
+            <form id="Login" method="POST" action="php/Login.php">
+                <div class="container">
+                    <h1>Login</h1>
+                    <p>Please fill in this form to log into your account:</p>
+                    <hr>
+                    <fieldset>
+                    <label for="username"><b>Username</b></label><br>
+                    <input type="text" placeholder="Enter username" name="username" id="username">
+                    <small id="usernameTag">Error message</small><br>
+
+                    <label for="psw"><b>Password</b></label><br>
+                    <input type="password" placeholder="Enter password" name="password" id="password">
+                    <small id="passwordTag">Error message</small><br>
+
+                    <button type="submit" value="Submit" class="loginbtn">Login</button>
+                    </fieldset>
+                </div>
+
+                <div class="container signin">
+                    <p>Don't have an account? <a href="BikeShopSignUp.html">Sign up</a>.</p>
+                </div>
+            </form>
+        </main>
+    <footer>
+        <div class="social">
+            <p>Follow us on Social Media!</p>
+            <a href ="https://www.facebook.com/" class="fa fa-facebook"></a>
+            <a href ="https://www.instagram.com/" class="fa fa-instagram"></a>
+            <a href ="https://www.twitter.com/" class="fa fa-twitter"></a>
+        </div>
+        <p><em>Copyright &copy; 2021 Phoenix Bicycle Corporation</em></p>
+        <p>DISCLAIMER:
+Phoenix Bicycles is a fictitious brand created solely for the purpose of the
+assessment of IN1010 module at City, University of London, UK. All products and
+people associated with Phoenix Bicycles are also fictitious. Any resemblance to real
+brands, products, or people is purely coincidental. Information provided about the
+product is also fictitious and should not be construed to be representative of actual
+products on the market in a similar product category.</p>
+    </footer>
+<script src="javascript/BikeShopLogin.js"></script>
+</body>
+</html>
